@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Food Habit Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Smart Food Habit Analyzer</h1>
+
+<form action="/predict" method="POST">
+
+<input type="number" name="water" placeholder="Water Glasses" required>
+
+<input type="number" name="junk_food" placeholder="Junk Food (1=yes,0=no)" required>
+
+<input type="number" name="fruits" placeholder="Fruits (1=yes,0=no)" required>
+
+<input type="number" name="meals" placeholder="Meals Per Day" required>
+
+<input type="number" name="sleep" placeholder="Sleep Hours" required>
+
+<input type="number" name="exercise" placeholder="Exercise (1=yes,0=no)" required>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+</html>
