@@ -3,7 +3,9 @@
 A Machine Learning based web application that predicts whether a user's food habits are Healthy, Average, or Unhealthy.
 
 ---
-
+# Login Credentials
+username: admin
+password:1234 
 ## Features
 
 - User Login System
